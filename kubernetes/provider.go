@@ -138,6 +138,7 @@ func Provider() terraform.ResourceProvider {
 
 		DataSourcesMap: map[string]*schema.Resource{
 			"kubernetes_all_namespaces":          dataSourceKubernetesAllNamespaces(),
+			"kubernetes_all_api_resources":       dataSourceKubernetesAllApiResources(),
 			"kubernetes_config_map":              dataSourceKubernetesConfigMap(),
 			"kubernetes_ingress":                 dataSourceKubernetesIngress(),
 			"kubernetes_namespace":               dataSourceKubernetesNamespace(),
